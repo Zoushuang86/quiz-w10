@@ -218,7 +218,7 @@ else:
 
 
 sess_config = tf.ConfigProto()
-sess_config.gpu_options.allow_growth = True
+sess_config.gpu_options.allow_growth = False
 sess = tf.Session(config=sess_config)
 
 init_op = tf.global_variables_initializer()
